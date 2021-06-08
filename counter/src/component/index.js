@@ -1,0 +1,1 @@
+export {default as Counter} from './Counter' // 함수를 json구조로 만들어 준다.

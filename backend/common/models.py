@@ -1,15 +1,14 @@
 from dataclasses import dataclass
 
 
-@dataclass()
-class Dataset(object):
-
+@dataclass
+class DataTransferObject(object):  # DTO getter setter
     context: str  # 경로
     fname: str  # 파일이름
-
+    dframe: object
 
     @property
-    def context(self) -> str: return self._context  # _는 접근제한의 의미 프로퍼티 하나하나 다 추가해주어야함 getter
+    def context(self) -> str: return self._context
 
     @context.setter
     def context(self, context): self._context = context
@@ -19,3 +18,9 @@ class Dataset(object):
 
     @fname.setter
     def fname(self, fname): self._fname = fname
+
+    @property
+    def dframe(self) -> object: return self._dframe
+
+    @dframe.setter
+    def dframe(self, dframe): self._dframe = dframe

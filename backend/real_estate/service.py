@@ -1,7 +1,10 @@
-from real_estate.dataset import Dataset
+from real_estate.housingdto import Housingdto
+
 import pandas as pd
+
+
 class Housing(object):
-    dataset = Dataset()
+    dataset = Housingdto()
 
     def new_model(self, payload):
         this = self.dataset

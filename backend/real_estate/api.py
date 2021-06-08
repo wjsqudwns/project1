@@ -1,5 +1,5 @@
-from real_estate.dataset import Dataset
-from real_estate.housing import Housing
+from real_estate.housingdto import Housingdto
+from real_estate.service import Housing
 
 
 class Controller(object):
@@ -7,7 +7,7 @@ class Controller(object):
     @staticmethod
     def main():
         housing = Housing()
-        dataset = Dataset()
+        dataset = Housingdto()
         dataset.housing = housing.new_model('housing.xlsx')
         while 1:
             menu = int(input('0: EXIT 1:New Model 2:DF'))
