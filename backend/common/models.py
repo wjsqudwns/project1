@@ -2,7 +2,7 @@ from dataclasses import dataclass
 
 
 @dataclass
-class DataTransferObject(object):  # DTO getter setter
+class FileDTO(object):  # DTO getter setter
     context: str  # 경로
     fname: str  # 파일이름
     dframe: object

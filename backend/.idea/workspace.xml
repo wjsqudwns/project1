@@ -2,27 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b88d7096-3259-4f64-ae5d-006eb9a593e6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cctv/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cctv/api.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cctv/cctvdto.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cctv/data/cctv_in_seoul.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cctv/data/crime_in_seoul.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cctv/data/geo_simple.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cctv/data/police_position.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cctv/data/pop_in_seoul.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cctv/data/us-states.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cctv/data/us_unemployment.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cctv/service.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/country.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/services.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/real_estate/housingdto.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stockmarket/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/abstracts.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real_estate/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/real_estate/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/real_estate/dataset.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/real_estate/housing.py" beforeDir="false" afterPath="$PROJECT_DIR$/real_estate/service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cctv/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/cctv/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cctv/cctvdto.py" beforeDir="false" afterPath="$PROJECT_DIR$/cctv/cctvdto.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cctv/service.py" beforeDir="false" afterPath="$PROJECT_DIR$/cctv/service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/services.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/services.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,27 +101,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="backend" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/real_estate" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\bitcamp\workspace\backend\real_estate\api.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="country" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="backend" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -177,6 +143,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="service (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="backend" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cctv" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cctv/service.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="service" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="backend" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -201,10 +188,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.api (2)" />
+        <item itemvalue="Python.service (1)" />
         <item itemvalue="Python.api (1)" />
         <item itemvalue="Python.service" />
         <item itemvalue="Python.country" />
-        <item itemvalue="Python.api" />
       </list>
     </recent_temporary>
   </component>

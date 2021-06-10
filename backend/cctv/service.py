@@ -1,18 +1,29 @@
-from cctv.cctvdto import Cctvdto
-import pandas as pd
+from common.services import Printer, Reader
+from common.models import FileDTO
 
-class Service(object):
-    dataset = Cctvdto()
 
-    def new_model(self, payload):
-        this = self.dataset
-        this.context = './data/'
-        this.fname = payload
-        return pd.read_csv(this.context + this.fname + '.csv')
+class Service(Printer, Reader):
 
-    def new_model2(self, payload):
-        this = self.dataset
-        this.context = './data/'
-        this.fname = payload
-        return pd.read_excel(this.context + this.fname + '.xls', sheet_name='YainSoft_Excel1')
+    def csv(self, payload):
+        file = FileDTO()
+        printer = Printer()
+        reader = Reader()
+        file.context = payload.get('context')
+        file.fname = payload.get('fname')
+        printer.dframe(reader.csv(file))
+
+    def xls(self, payload):
+        file = FileDTO()
+        printer = Printer()
+        reader = Reader()
+        file.context = payload.get('context')
+        file.fname = payload.get('fname')
+        printer.dframe(reader.xls(file,1,None)) # 파일명 시작할행, 사용할 열 'F'
+
+    def json(self, payload):
+        pass
+
+    def new_file(self):
+        pass
+
 
